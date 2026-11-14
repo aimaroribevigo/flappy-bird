@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102e35">
+  <meta name="description" content="Un pequeño vuelo, un gran reto. Un juego inspirado en Flappy Bird, con gráficos originales y controles táctiles.">
+  <title>Flappy Bird · Un vuelo más</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="layout">
+    <header class="masthead"><a href="./" class="brand" aria-label="Flappy Bird, inicio"><span class="brand-icon">↗</span> LITTLE ARCADE<span class="edition">VOL. 01</span></a><span class="status"><i></i> LISTO PARA VOLAR</span></header>
+    <section class="intro"><p class="eyebrow">FÁCIL DE JUGAR. DIFÍCIL DE SOLTAR.</p><h1>Flappy<span>Bird</span><span class="title-star" aria-hidden="true">✳</span></h1><p class="tagline">Un pequeño pájaro. Un gran reto.<br>Encuentra tu ritmo y llega un poco más lejos.</p><div class="controls"><span><kbd>ESPACIO</kbd> para volar</span><span class="or">o</span><span>haz clic / toca la pantalla</span></div><div class="tip"><span>↗</span><p>El secreto está en el ritmo.<br><strong>Un aleteo a la vez.</strong></p></div></section>
+    <section class="game-section" aria-label="Juego Flappy Bird">
+      <div class="game-toolbar"><span class="game-label"><i></i> EL CIELO ES TUYO</span><div><button id="sound" class="icon-button" aria-label="Activar sonido" aria-pressed="false">♫</button><button id="pause" class="icon-button" aria-label="Pausar partida" disabled>Ⅱ</button></div></div>
+      <div class="game-frame" id="frame">
+        <canvas id="game" width="480" height="640" tabindex="0" aria-label="Flappy Bird. Pulsa espacio, flecha arriba o toca para volar. P para pausar."></canvas>
+        <div class="score" id="score" aria-hidden="true">0</div>
+        <div class="overlay" id="overlay"><div class="overlay-card"><span class="pill" id="pill">¿LISTO PARA DESPEGAR?</span><h2 id="message">Un vuelo más.</h2><p id="subtitle">Esquiva las tuberías.<br>Cada una cuenta.</p><button id="play" class="play-button">A volar <span>↗</span></button><span class="overlay-hint" id="hint">ESPACIO · CLIC · TOQUE</span></div></div>
+      </div>
+      <div class="game-footer"><span>↗ <b id="best">0</b><small>TU RÉCORD</small></span><span class="footer-note">Cada intento es un nuevo comienzo.</span></div>
+      <p class="sr-only" id="announcement" aria-live="polite"></p>
+    </section>
+    <footer class="page-footer"><span>HECHO PARA ESE «ÚLTIMO INTENTO».</span><span><kbd>P</kbd> pausa <span class="dot">·</span> <kbd>M</kbd> sonido</span></footer>
+  </main>
+  <script src="engine.js"></script><script src="game.js"></script>
+</body>
+</html>
