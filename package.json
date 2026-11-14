@@ -1,0 +1,7 @@
+{
+  "name": "flappy-bird-little-arcade",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Flappy Bird con gráficos originales, controles táctiles y récord local.",
+  "scripts": { "start": "node server.cjs", "test": "node --test tests/engine.test.cjs" }
+}
